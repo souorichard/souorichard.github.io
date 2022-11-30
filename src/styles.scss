@@ -17,6 +17,25 @@ body {
 }
 
 section {
-  padding: 100px;
+  padding: 100px 130px;
   background-color: var(--primary);
+
+  .titleText {
+    margin-bottom: rem-calc(36);
+    font-size: rem-calc(32);
+    color: var(--white);
+    letter-spacing: 2px;
+
+    span {
+      font-size: rem-calc(40);
+      color: var(--blue);
+    }
+  }
+
+  .text {
+    font-size: rem-calc(18);
+    font-weight: 300;
+    text-align: justify;
+    color: var(--white);
+  }
 }

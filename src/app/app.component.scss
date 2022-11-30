@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 40px 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,7 @@
         list-style: none;
 
         a {
-          font-weight: 300;
+          font-weight: 400;
           text-decoration: none;
           color: var(--white);
         }
@@ -61,7 +61,7 @@
 }
 
 .toolbar.sticky {
-  padding: 10px 100px;
+  padding: 20px 130px;
   background-color: var(--primary);
   box-shadow: 0 5px 20px var(--shadow);
 

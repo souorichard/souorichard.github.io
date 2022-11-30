@@ -10,7 +10,7 @@ import { AppMaterialModule } from './app-material/app-material.module';
     AppMaterialModule
   ],
   exports: [
-    AppMaterialModule
+    AppMaterialModule,
   ]
 })
 export class SharedModule { }
