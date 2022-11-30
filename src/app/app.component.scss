@@ -1,0 +1,81 @@
+@import '../config-scss/rem-calc.scss';
+
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  transition: .8s;
+  z-index: 10000;
+
+  .logo {
+    max-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .nav-links {
+    flex: 1;
+    text-align: right;
+
+    .navigation {
+
+      li {
+        position: relative;
+        padding: 8px 15px;
+        display: inline-block;
+        list-style: none;
+
+        a {
+          font-weight: 300;
+          text-decoration: none;
+          color: var(--white);
+        }
+      }
+
+      li::after {
+        content: '';
+        width: 0%;
+        height: 3px;
+        margin: auto;
+        display: block;
+        background: var(--gradient);
+        transition: .5s;
+      }
+
+      li:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.toolbar.sticky {
+  padding: 10px 100px;
+  background-color: var(--primary);
+  box-shadow: 0 5px 20px var(--shadow);
+
+  .logo {
+    color: var(--white);
+  }
+
+  .nav-links {
+    .navigation {
+      li {
+        a{
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
