@@ -5,24 +5,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutModule } from './about/about.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContactComponent } from './contact/contact.component';
-import { HomeComponent } from './home/home.component';
-import { ProjectCardComponent } from './projects/project-card/project-card.component';
+import { ContactModule } from './contact/contact.module';
+import { HomeModule } from './home/home.module';
+import { ProjectsModule } from './projects/projects.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    ContactComponent,
-    ProjectCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule,
     BrowserAnimationsModule,
+    SharedModule,
+    HomeModule,
     AboutModule,
+    ProjectsModule,
+    ContactModule
   ],
   providers: [],
   bootstrap: [AppComponent]

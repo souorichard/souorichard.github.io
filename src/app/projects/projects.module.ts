@@ -1,7 +1,7 @@
-import { ProjectCardComponent } from './project-card/project-card.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
+import { ProjectCardComponent } from './project-card/project-card.component';
 import { ProjectsComponent } from './projects.component';
 
 @NgModule({
@@ -11,6 +11,9 @@ import { ProjectsComponent } from './projects.component';
   ],
   imports: [
     CommonModule,
+  ],
+  exports: [
+    ProjectsComponent
   ]
 })
 export class ProjectsModule { }
