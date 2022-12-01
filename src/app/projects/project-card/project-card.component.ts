@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Card } from '../../core/model';
 
 @Component({
   selector: 'app-project-card',
@@ -6,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-card.component.scss']
 })
 export class ProjectCardComponent implements OnInit {
+
+  listCards: Card[] = [
+    { urlImg: 'https://opengraph.githubassets.com/1/souorichard/formsapp', link: 'https://github.com/souorichard/formsApp' },
+    { urlImg: 'https://opengraph.githubassets.com/1/souorichard/myPortfolio', link: 'https://github.com/souorichard/myPortfolio' },
+    { urlImg: 'https://opengraph.githubassets.com/1/souorichard/webShopping', link: 'https://github.com/souorichard/webShopping' },
+  ];
 
   constructor() { }
 

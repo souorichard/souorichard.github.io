@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { ProjectsComponent } from './projects.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { ProjectsComponent } from './projects.component';
   ],
   imports: [
     CommonModule,
+    SharedModule
   ],
   exports: [
     ProjectsComponent

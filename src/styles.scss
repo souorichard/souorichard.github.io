@@ -17,12 +17,13 @@ body {
 }
 
 section {
-  padding: 100px 130px;
+  padding: 80px 130px;
   background-color: var(--primary);
 
   .titleText {
     margin-bottom: rem-calc(36);
     font-size: rem-calc(32);
+    text-transform: uppercase;
     color: var(--white);
     letter-spacing: 2px;
 

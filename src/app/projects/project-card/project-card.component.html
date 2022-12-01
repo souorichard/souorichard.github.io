@@ -1,1 +1,10 @@
-<p>project-card works!</p>
+<div class="project-cards">
+  <div class="card" *ngFor="let card of listCards">
+    <div class="top-card">
+      <img [src]="card.urlImg" alt="">
+    </div>
+    <div class="btn-card">
+      <a mat-raised-button [href]="card.link" target="_blank">View Project</a>
+    </div>
+  </div>
+</div>
