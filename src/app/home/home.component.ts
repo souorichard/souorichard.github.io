@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+
   constructor() {}
 
   ngOnInit(): void {
@@ -21,4 +22,5 @@ export class HomeComponent implements OnInit {
     const title = document.querySelector('.title');
     typeWrite(title);
   }
+
 }
