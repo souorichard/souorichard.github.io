@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { SharedModule } from './../shared/shared.module';
 import { AboutComponent } from './about.component';
+import { AboutCardComponent } from './about-card/about-card.component';
 
 @NgModule({
   declarations: [
-    AboutComponent
+    AboutComponent,
+    AboutCardComponent
   ],
   imports: [
     CommonModule,

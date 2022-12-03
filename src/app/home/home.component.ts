@@ -16,10 +16,11 @@ export class HomeComponent implements OnInit {
       textArray.forEach(function (string: any, i: number) {
         setTimeout(function () {
           element.innerHTML += string;
-        }, 75 * i);
+        }, 200 * i);
       });
     }
-    const title = document.querySelector('.title');
+
+    const title = document.querySelector('.titleHome');
     typeWrite(title);
   }
 

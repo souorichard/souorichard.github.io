@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Card } from '../../core/model';
+import { ProjectCard } from '../../core/model';
 
 @Component({
   selector: 'app-project-card',
@@ -8,7 +8,7 @@ import { Card } from '../../core/model';
 })
 export class ProjectCardComponent implements OnInit {
 
-  listCards: Card[] = [
+  listCards: ProjectCard[] = [
     { urlImg: 'https://opengraph.githubassets.com/1/souorichard/formsapp', link: 'https://github.com/souorichard/formsApp' },
     { urlImg: 'https://opengraph.githubassets.com/1/souorichard/myPortfolio', link: 'https://github.com/souorichard/myPortfolio' },
     { urlImg: 'https://opengraph.githubassets.com/1/souorichard/webShopping', link: 'https://github.com/souorichard/webShopping' },

@@ -1,0 +1,65 @@
+@import '../../../config-scss/rem-calc.scss';
+
+.about-cards {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .card {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 30px var(--shadow);
+
+    .title-card {
+      font-weight: 800;
+      color: var(--white);
+      text-shadow: 0 0 30px var(--black);
+      letter-spacing: 1px;
+    }
+
+    .text {
+      margin-top: 0;
+      font-size: rem-calc(14);
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+  #soccer {
+    background: linear-gradient(var(--shadow), var(--shadow)), url(../../../assets/about1.jpg);
+  }
+
+  #programmer {
+    background: linear-gradient(var(--shadow), var(--shadow)), url(../../../assets/about2.jpg);
+  }
+
+  #guitar-player {
+    background: linear-gradient(var(--shadow), var(--shadow)), url(../../../assets/about3.jpg);
+  }
+
+  #studying {
+    background: linear-gradient(var(--shadow), var(--shadow)), url(../../../assets/about4.jpg);
+  }
+
+  #watching {
+    background: linear-gradient(var(--shadow), var(--shadow)), url(../../../assets/about5.jpg);
+  }
+
+  #soccer,
+  #programmer,
+  #guitar-player,
+  #studying,
+  #watching {
+    background-position: center;
+    background-size: cover;
+  }
+}
