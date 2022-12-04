@@ -3,16 +3,15 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-
   title = 'myPortfolio';
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
       const toolbar = this.document.querySelector('mat-toolbar');
       toolbar?.classList.toggle('sticky', this.window.scrollY > 0);
     });
@@ -21,8 +20,7 @@ export class AppComponent implements OnInit {
   scrollTop() {
     window.scroll({
       top: 0,
-      behavior: 'smooth'
-    })
+      behavior: 'smooth',
+    });
   }
-
 }

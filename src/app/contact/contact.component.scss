@@ -94,3 +94,15 @@
     }
   }
 }
+
+
+
+@media (max-width: 450px) {
+  .formCard {
+    display: block !important;
+
+    .left {
+      display: none;
+    }
+  }
+}

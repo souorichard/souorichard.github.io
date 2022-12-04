@@ -1,4 +1,4 @@
-@import '../config-scss/rem-calc.scss';
+@import "../config-scss/rem-calc.scss";
 
 .toolbar {
   position: fixed;
@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   background: transparent;
-  transition: .8s;
+  transition: 0.8s;
   z-index: 10000;
 
   .logo {
@@ -24,12 +24,20 @@
     }
   }
 
+  .fa-solid {
+    font-size: rem-calc(28);
+    color: var(--white);
+  }
+
+  .fa-xmark {
+    font-size: rem-calc(32);
+  }
+
   .nav-links {
     flex: 1;
     text-align: right;
 
     .navigation {
-
       li {
         position: relative;
         padding: 8px 15px;
@@ -44,13 +52,13 @@
       }
 
       li::after {
-        content: '';
+        content: "";
         width: 0%;
         height: 3px;
         margin: auto;
         display: block;
         background: var(--gradient);
-        transition: .5s;
+        transition: 0.5s;
       }
 
       li:hover::after {
@@ -72,7 +80,7 @@
   .nav-links {
     .navigation {
       li {
-        a{
+        a {
           color: var(--white);
         }
       }
@@ -96,6 +104,38 @@
 
     span {
       color: var(--blue);
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 920px) {
+  .toolbar,
+  .toolbar.sticky {
+    padding: 40px 80px;
+  }
+
+  .footer {
+    padding: 10px 80px;
+  }
+}
+
+@media (max-width: 450px) {
+  .toolbar,
+  .toolbar.sticky {
+    padding: 35px 20px;
+
+    .nav-links {
+      display: none;
+    }
+  }
+
+  .footer {
+    padding: 10px 20px;
+
+    p {
+      font-size: rem-calc(12);
+      text-align: center;
     }
   }
 }
