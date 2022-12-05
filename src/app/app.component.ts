@@ -6,13 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+
   title = 'myPortfolio';
 
   constructor() {}
 
   ngOnInit(): void {
     window.addEventListener('scroll', function () {
-      const toolbar = this.document.querySelector('mat-toolbar');
+      const toolbar = this.document.querySelector('.toolbar');
       toolbar?.classList.toggle('sticky', this.window.scrollY > 0);
     });
   }
@@ -23,4 +24,5 @@ export class AppComponent implements OnInit {
       behavior: 'smooth',
     });
   }
+
 }
