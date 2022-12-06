@@ -11,7 +11,7 @@
   align-items: center;
   background: transparent;
   transition: 0.8s;
-  z-index: 10000;
+  z-index: 9999;
 
   .logo {
     max-width: 60px;
@@ -56,6 +56,82 @@
 
     li:hover::after {
       width: 100%;
+    }
+  }
+
+  .hamburguer {
+    display: none;
+
+    .fa-solid {
+      color: var(--white);
+    }
+
+    .fa-bars {
+      font-size: rem-calc(22);
+    }
+
+    .fa-xmark {
+      font-size: rem-calc(25);
+    }
+  }
+
+  .sideMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    background-color: var(--shadow);
+    z-index: 10000;
+
+    .menu {
+      position: relative;
+      width: 85%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--primary);
+
+      .navigationMobile {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        li {
+          position: relative;
+          padding: 8px 15px;
+          display: inline-block;
+          list-style: none;
+          cursor: pointer;
+
+          a {
+            font-weight: 400;
+            text-decoration: none;
+            color: var(--white);
+          }
+        }
+
+        li::after {
+          content: "";
+          width: 0%;
+          height: 3px;
+          margin: auto;
+          display: block;
+          background: var(--gradient);
+          transition: 0.5s;
+        }
+
+        li:hover::after {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -109,6 +185,30 @@
 
   .footer {
     padding: 10px 80px;
+  }
+}
+
+@media (max-width: 540px) {
+  .toolbar,
+  .toolbar.sticky {
+    padding: 40px 35px;
+
+    .navigation {
+      display: none;
+    }
+
+    .hamburguer {
+      display: block;
+    }
+  }
+
+  .footer {
+    padding: 10px 35px;
+
+    p {
+      font-size: rem-calc(12);
+      text-align: center;
+    }
   }
 }
 

@@ -108,6 +108,24 @@
   }
 }
 
+@media (max-width: 540px) {
+  .content {
+    max-width: 100%;
+
+    h2 {
+      font-size: rem-calc(16);
+    }
+
+    .titleHome {
+      font-size: rem-calc(48) !important;
+    }
+
+    h3 {
+      font-size: rem-calc(16) !important;
+    }
+  }
+}
+
 @media (max-width: 450px) {
   .content {
     max-width: 100%;
@@ -140,6 +158,33 @@
 
     h3 {
       font-size: rem-calc(16) !important;
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .content {
+    max-width: 100%;
+
+    h2 {
+      font-size: rem-calc(16);
+    }
+
+    .titleHome {
+      font-size: rem-calc(28) !important;
+    }
+
+    h3 {
+      font-size: rem-calc(16) !important;
+    }
+
+    .social-buttons {
+      width: 250px !important;
+
+      .social-button {
+        width: 35px !important;
+        height: 35px !important;
+      }
     }
   }
 }

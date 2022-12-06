@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+
     function typeWrite(element: any) {
       const textArray = element.innerHTML.split('');
       element.innerHTML = ' ';

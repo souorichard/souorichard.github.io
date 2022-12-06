@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  title = 'myPortfolio';
+  menuOpened: boolean = false;
+  sideMenu = document.querySelector('.sideMenu');
 
   constructor() {}
 
@@ -23,6 +24,14 @@ export class AppComponent implements OnInit {
       top: 0,
       behavior: 'smooth',
     });
+  }
+
+  toggleMenu() {
+    this.menuOpened = !this.menuOpened;
+
+    if (this.menuOpened === true) {
+      this.sideMenu?.classList.toggle('open');
+    }
   }
 
 }

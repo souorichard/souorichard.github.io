@@ -1,6 +1,6 @@
 <mat-toolbar class="toolbar" id="toolbar">
   <a href="#" class="logo">
-    <img src="assets/personal_logo.png" alt="">
+    <img src="assets/personal_logo.png" alt="" />
   </a>
   <!-- WEB -->
   <ul class="navigation">
@@ -9,6 +9,11 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+
+  <!-- MOBILE -->
+  <button mat-icon-button class="hamburguer" (click)="toggleMenu()">
+    <i class="fa-solid fa-{{ !menuOpened ? 'bars' : 'xmark' }}"></i>
+  </button>
 </mat-toolbar>
 
 <app-home></app-home>
@@ -17,9 +22,8 @@
 <app-contact id="contact"></app-contact>
 
 <footer class="footer">
-  <p>Desenvolvido por Richard Rodrigues da Silva. <span>&copy; (14)99704-3502</span></p>
+  <p>
+    Desenvolvido por Richard Rodrigues da Silva.
+    <span>&copy; (14)99704-3502</span>
+  </p>
 </footer>
-
-<div class="mobile-links">
-  asd
-</div>
